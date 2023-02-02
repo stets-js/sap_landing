@@ -1,0 +1,21 @@
+// items = quantity per one line. indent = space between them
+
+@mixin flex_item_width($items, $indent) {
+    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+  }
+  
+  // we write only numbers (500, 16, 25, null/none{for links})
+  
+  @mixin font($fw, $fs, $lh, $td) {
+    font-weight: $fw;
+    font-size: $fs + px;
+    line-height: calc($lh/$fs);
+    text-decoration: $td;
+  }
+  
+  @mixin transition($property, $duration, $delay) {
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: $delay;
+  }
