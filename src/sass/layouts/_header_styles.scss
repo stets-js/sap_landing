@@ -1,0 +1,57 @@
+.logo__img{
+    width: 55px;
+    height: 64px;
+}
+.header-nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    //justify-content: space-between;
+}
+.header-navList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    //align-items: flex-end;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-navList__link{
+    text-transform: uppercase;
+    @include font(700, 18, 30, none);
+    letter-spacing: 1.5;
+    color: var(--headerMenu-text-color);
+}
+.header-contactsList__link--letter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    @include font(700, 14, 21, none);
+    letter-spacing: 1.5;
+    color: var(--headerMenu-text-color);
+}
+.header-contactsList__link--phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    @include font(700, 14, 21, none);
+    letter-spacing: 1.5;
+    color: var(--headerMenu-text-color);
+}
+.mail-icon{
+    width: 20;
+    height: 20;
+    display: inline-block;
+}
+.phone-icon{
+    width: 20;
+    height: 20;
+    display: inline-block;
+}

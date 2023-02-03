@@ -4,7 +4,6 @@ html {
   
   body {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
     color: var(--main-text-color-black);
     background-color: #ffffff;
   }
@@ -32,3 +31,11 @@ ol {
   margin: 0;
   padding: 0;
 }
+
+a {
+  text-decoration: inherit;
+}
+
+// a:visited{
+//   color: inherit;
+// }

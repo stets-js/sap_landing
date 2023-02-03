@@ -2,45 +2,44 @@
     list-style-type: none;
   }
   
-  .hidden-element {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  // .hidden-element {
+  //   position: absolute;
+  //   width: 1px;
+  //   height: 1px;
+  //   margin: -1px;
+  //   border: 0;
+  //   padding: 0;
   
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  //   white-space: nowrap;
+  //   clip-path: inset(100%);
+  //   clip: rect(0 0 0 0);
+  //   overflow: hidden;
   
-    /* Second method */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
+  //   /* Second method */
+  //   -webkit-appearance: none;
+  //   -moz-appearance: none;
+  //   appearance: none;
+  // }
   
-  .unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    /* Non-prefixed version, currentlynot supported by any browser */
-  }
+  // .unselectable {
+  //   -webkit-touch-callout: none;
+  //   -webkit-user-select: none;
+  //   -khtml-user-select: none;
+  //   -moz-user-select: none;
+  //   -ms-user-select: none;
+  //   user-select: none;
+  //   /* Non-prefixed version, currentlynot supported by any browser */
+  // }
   
   .no-scroll {
     overflow: hidden;
   }
   
   .container {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
-    // background-color: #ffffff;
     max-width: $breakpoint-mob;
   
     @media screen and (min-width: $breakpoint-tab) {
@@ -50,27 +49,24 @@
     }
   
     @media screen and (min-width: $breakpoint-desk) {
-      // background-color: #fffff9;
       max-width: $breakpoint-desk;
-      padding-right: 16px;
-      padding-left: 16px;
+      padding-right: 20px;
+      padding-left: 20px;
     }
   }
   
-  .title {
+  .title_hero {
     margin-right: auto;
     margin-left: auto;
-  
-    font-family: 'Caveat Brush';
-    @include font(400, 24, 30, none);
+    font-family: 'Oswald';
+    @include font(700, 24, 30, none);
     text-align: center;
   }
   
-  .subtitle {
+  .subtitle_hero {
     margin-right: auto;
     margin-left: auto;
-  
-    font-weight: 600;
-    font-style: italic;
+    font-family: 'Merriweather';
+    @include font(700, 24, 30, none);
     text-align: center;
   }
