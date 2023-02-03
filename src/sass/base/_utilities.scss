@@ -55,18 +55,3 @@
     }
   }
   
-  .title_hero {
-    margin-right: auto;
-    margin-left: auto;
-    font-family: 'Oswald';
-    @include font(700, 24, 30, none);
-    text-align: center;
-  }
-  
-  .subtitle_hero {
-    margin-right: auto;
-    margin-left: auto;
-    font-family: 'Merriweather';
-    @include font(700, 24, 30, none);
-    text-align: center;
-  }

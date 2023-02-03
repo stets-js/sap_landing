@@ -1,0 +1,46 @@
+.hero {
+    max-width: 480px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin: 0 auto;
+    background-image: url("../images/hero/hero-tab-768x248.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width:$breakpoint-tab){
+        max-width: 768px;
+        // background-size: 768px 400px;
+        background-image: url("../images/hero/hero-tab-768x248.jpg");
+            }
+        
+    @media screen and (min-width:$breakpoint-desk) {
+        max-width: 1600px;
+        height: 600px;
+        padding-top: auto;
+        padding-bottom: auto;
+        background-image: url("../images/hero/hero-dc-1536x496.jpg")}
+    }
+.hero-box{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subtitle-hero {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Oswald';
+    @include font(700, 100, 150, none);
+    text-align: center;
+    color: var(--hero-title-color);
+  }
+  
+  .title-hero {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Merriweather';
+    @include font(700, 60, 90, none);
+    text-align: center;
+    color: var(--hero-title-color);
+  }
