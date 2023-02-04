@@ -29,7 +29,9 @@
         background-size: 400px 150px,600px 90px, cover;
     }
     }
-
+.long-height-section{
+    height: 700px;
+}
     .about-us-box{
         width: 900px;
         margin: 0 auto;
@@ -56,6 +58,9 @@
         // @media screen and (min-width: $breakpoint-desk) {
         //   display: none;
         // }
+    }
+    .about-us__text--hide{
+        display: none;
     }
     
       
