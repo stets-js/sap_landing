@@ -1,5 +1,6 @@
 .services{
     padding-top: 118px;
+    padding-bottom: 88px;
 }
 
 .services__title{
@@ -17,7 +18,7 @@
     color: var(--headerMenu-text-color);
 }
 
-.services-registartionBox{
+.services-registartionBoxTitle{
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
@@ -38,29 +39,73 @@ margin-bottom: 30px;
     }
 }
 
-.services__list{
-display: flex;
-  flex-direction: column;
-  
-  @media screen and (min-width: $breakpoint-desk) {
-      flex-direction: row;
-      gap: 30px;
-      margin-bottom: 30px;
+.services-marketSurveillanceBoxTitle{
+  display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+margin-bottom: 30px;
+
+    @media screen and (min-width:$breakpoint-tab){
+        max-width: 768px;
+    }  
+
+    @media screen and (min-width:$breakpoint-desk) {
+        max-width: 1600px;
+        height: 60px;
+        background-image: url("../images/services/flip2-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 600px 60px;
     }
 }
 
-.services__item{
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    width: calc((100% - 60px)/4);
-    height: 200px;
-    background-color: var(--card-bg-color);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.services-sertificationBoxTitle{
+  display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+margin-bottom: 30px;
+
+    @media screen and (min-width:$breakpoint-tab){
+        max-width: 768px;
+    }  
+
+    @media screen and (min-width:$breakpoint-desk) {
+        max-width: 1600px;
+        height: 60px;
+        background-image: url("../images/services/flip3-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 600px 60px;
+    }
+}
+.services-otherBoxTitle{
+  display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+margin-bottom: 30px;
+
+    @media screen and (min-width:$breakpoint-tab){
+        max-width: 768px;
+    }  
+
+    @media screen and (min-width:$breakpoint-desk) {
+        max-width: 1600px;
+        height: 60px;
+        background-image: url("../images/services/flip4-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 600px 60px;
+    }
 }
 
 .services__text{
     text-align: center;
-    @include font(400, 18, 27, none);
+    @include font(400, 18, 21, none);
+}
+.services__text--back{
+    text-align: center;
+    @include font(400, 16, 19, none);
 }
