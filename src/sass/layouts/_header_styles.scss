@@ -144,6 +144,7 @@ background-color: #FFF;
     
         &.is-open {
     display: flex;
+    gap: 60px;
     padding: 100px 40px;
     position: fixed;
     z-index: 1;
@@ -153,6 +154,7 @@ background-color: #FFF;
     flex-direction: column;
     height: 100vh;
     justify-content: space-between;
+    overflow-y: scroll;
     }
 
     
