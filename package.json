@@ -2,7 +2,7 @@
   "name": "sap_landing",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/stets-js/sap_landing.git",
+  "homepage": "https://stets-js.github.io/sap_landing/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /sap_landing/"
