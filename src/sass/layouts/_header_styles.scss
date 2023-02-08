@@ -73,7 +73,7 @@ background-color: #FFF;
     letter-spacing: 1.5;
     color: var(--headerMenu-text-color);
         @media screen and (min-width: $breakpoint-desk){
-            @include font(700, 14, 21, none);
+            @include font(700, 16, 24, none);
         }
 }
 .header-contactsList__link--phone{
@@ -86,7 +86,7 @@ background-color: #FFF;
     letter-spacing: 1.5;
     color: var(--headerMenu-text-color);
         @media screen and (min-width: $breakpoint-desk){
-            @include font(700, 14, 21, none);
+            @include font(700, 16, 24, none);
         }
 }
 .mail-icon{
