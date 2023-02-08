@@ -1,8 +1,9 @@
 .hero {
+    scroll-margin-top: 80px;
     max-width: 480px;
     height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
@@ -20,29 +21,39 @@
     @media screen and (min-width:$breakpoint-desk) {
         max-width: 1600px;
         height: 600px;
-        padding-top: auto;
-        padding-bottom: auto;
+        padding-top: 118px;
+    padding-bottom: 118px;
         background-image: url("../images/hero/hero-dc-1536x496.jpg")}
     }
+
 .hero-box{
+    @media screen and (min-width:$breakpoint-desk) {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    }
 }
+
 .subtitle-hero {
     margin-right: auto;
     margin-left: auto;
     font-family: 'Oswald';
-    @include font(700, 100, 150, none);
+    @include font(700, 70, 105, none);
     text-align: center;
     color: var(--hero-title-color);
+            @media screen and (min-width:$breakpoint-desk){
+                @include font(700, 100, 150, none); 
+            }
 }
 
 .title-hero {
     margin-right: auto;
     margin-left: auto;
     font-family: 'Merriweather';
-    @include font(700, 60, 90, none);
+    @include font(700, 30, 45, none);
     text-align: center;
     color: var(--hero-title-color);
+            @media screen and (min-width:$breakpoint-desk){
+                @include font(700, 60, 90, none); 
+            }
   }

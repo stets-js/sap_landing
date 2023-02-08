@@ -7,42 +7,74 @@ left:0px;
 background-color: #FFF;
 }
 
-.logo__img{
-    width: 55px;
-    height: 64px;
-}
+
 .header-nav{
     height: 80px;
     display: flex;
     align-items: center;
-    //justify-content: space-between;
+    justify-content: space-between;
 }
+.logo__img{
+    width: 55px;
+    height: 64px;
+}
+
 .header-navList{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    //align-items: flex-end;
-    gap: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 30px;
+    // @media screen and (min-width: $breakpoint-tab){
+    //     flex-direction: row;
+    //     align-items: center;
+    //     justify-content: center;
+    //     gap: 40px;
+    //     // margin-left: auto;
+    //     // margin-right: auto;
+    // }
+        @media screen and (min-width: $breakpoint-desk){
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .header-navList__link{
     text-transform: uppercase;
     @include font(700, 18, 30, none);
     letter-spacing: 1.5;
     color: var(--headerMenu-text-color);
+        // @media screen and (min-width: $breakpoint-tab) and (max-width: 1279.9px){
+        //     @include font(700, 10, 15, none);
+        // }
 }
+
+.header-contactsList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+        @media screen and (min-width: $breakpoint-desk){
+          gap: 15px;
+          align-items: start; 
+        }
+}
+
 .header-contactsList__link--letter{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
     text-transform: uppercase;
-    @include font(700, 14, 21, none);
+    @include font(700, 18, 30, none);
     letter-spacing: 1.5;
     color: var(--headerMenu-text-color);
+        @media screen and (min-width: $breakpoint-desk){
+            @include font(700, 14, 21, none);
+        }
 }
 .header-contactsList__link--phone{
     display: flex;
@@ -50,9 +82,12 @@ background-color: #FFF;
     align-items: center;
     gap: 10px;
     text-transform: uppercase;
-    @include font(700, 14, 21, none);
+    @include font(700, 18, 30, none);
     letter-spacing: 1.5;
     color: var(--headerMenu-text-color);
+        @media screen and (min-width: $breakpoint-desk){
+            @include font(700, 14, 21, none);
+        }
 }
 .mail-icon{
     width: 20;
@@ -61,4 +96,71 @@ background-color: #FFF;
 .phone-icon{
     width: 20;
     height: 20;
+}
+
+///////////////////////////////////////////////////////
+// MENU
+
+.mob-menu {
+    display: flex;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: $breakpoint-desk) {
+        display: none;
+    }
+
+    // &:hover {
+    //     fill: $accent;
+    // }
+    &__close {
+        display: none;
+    }
+    &.is-open {
+       
+    .mob-menu__close {
+        display: block;
+        position: absolute;
+        //fill: #212121;
+
+        // &:hover, &:focus {
+        //    fill: $accent;
+        // }
+    }
+
+    .mob-menu__open {
+        display: none;
+    }
+    }
+}
+
+
+.menu-container {
+    display: none;
+       // background-color: #ffffff;
+    
+        &.is-open {
+    display: flex;
+    padding: 100px 40px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    }
+
+    
+
+    @media screen and (min-width: $breakpoint-desk) {
+    display: flex;
+    flex-grow: 2;
+    height: 100%;
+    
+    }
 }

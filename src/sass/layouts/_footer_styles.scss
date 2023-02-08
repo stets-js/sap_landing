@@ -1,7 +1,15 @@
 .footer{
+    max-width: 480px;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin: 0 auto;
     background-color:#7aacc5;
+    @media screen and (min-width:$breakpoint-tab){
+        max-width: 768px;
+    }
+    @media screen and (min-width:$breakpoint-desk) {
+        max-width: 1600px;
+    }
 }
 
 .footer__logo{
@@ -10,9 +18,14 @@
 
 .footer-contacts__list{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    @media screen and (min-width:$breakpoint-desk) {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+    }
 }
 .footer-contacts__item{
     display: flex;
@@ -33,6 +46,7 @@
     gap: 10px;
     color: var(--footer-contacts-color);
     @include font(400, 18, 27, none);
+    text-transform: uppercase;
 }
 .footer-contacts__link--phone{
     display: flex;

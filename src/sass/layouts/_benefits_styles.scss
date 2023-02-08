@@ -1,6 +1,11 @@
 .benefits{
+    scroll-margin-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width:$breakpoint-desk) {
     padding-top: 118px;
     padding-bottom: 118px;
+    }
 }
 
 .benefits__title{
@@ -12,8 +17,18 @@
 
 .benefits__list{
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    @media screen and (min-width:$breakpoint-tab) {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+    }
+    @media screen and (min-width:$breakpoint-desk) {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    }
     
 }
 
@@ -21,7 +36,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc((100% - 100px)/4);
+    width: calc((100% - 50px));
+    @media screen and (min-width:$breakpoint-tab) {
+        width: calc((100% - 200px)/2);
+        height: 280px;
+    }
+    @media screen and (min-width:$breakpoint-desk) {
+        width: calc((100% - 100px)/4);
+    }
 }
 
 .benefits__iconBox{

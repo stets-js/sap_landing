@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 $('[data-btn-more]').on('click', function () {
   $("section.about-us").animate({
-    height: '700px'
+    height: "inherit"
   }, 800, function(){
     $(this).find('[data-text-less]').removeClass('is-hidden');
   $(this).find('[data-btn-less]').removeClass('is-hidden');
@@ -15,7 +15,7 @@ $('[data-btn-more]').on('click', function () {
 
 $('[data-btn-less]').on('click', function () {
   $("section.about-us").animate({
-    height: '500px'
+    height: "inherit"
   }, 800, function () {
     
   $(this).find('[data-text-more]').removeClass('is-hidden');

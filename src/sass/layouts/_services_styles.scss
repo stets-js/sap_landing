@@ -1,6 +1,11 @@
 .services{
-    padding-top: 118px;
-    padding-bottom: 88px;
+    scroll-margin-top: 50px;
+    padding-top: 60px;
+        padding-bottom: 44px;
+    @media screen and (min-width:$breakpoint-desk){
+        padding-top: 118px;
+        padding-bottom: 88px;
+    }
 }
 
 .services__title{
@@ -11,7 +16,7 @@
 }
 
 .services__subtitle{
-   // text-align: center;
+   text-align: center;
     text-transform: uppercase;
     @include font(700, 22, 33, none);
     letter-spacing: 3;

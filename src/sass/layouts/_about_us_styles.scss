@@ -1,70 +1,73 @@
 .about-us {
+    scroll-margin-top: 50px;
     max-width: 480px;
-    height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    //height: 400px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin: 0 auto;
-    background-image: url("../images/about_us/sec2-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url("../images/about_us/LLC.png"),url("../images/about_us/SAPIENTIS.png"), url("../images/about_us/sec2-bg.jpg");
+        background-repeat: no-repeat, no-repeat,no-repeat;
+        background-position: top 20px left 20px, bottom 20px right 20px, center;
+        background-size: 100px 40px,200px 30px, cover;
 
     @media screen and (min-width:$breakpoint-tab){
         max-width: 768px;
         // background-size: 768px 400px;
         background-image: url("../images/about_us/LLC.png"),url("../images/about_us/SAPIENTIS.png"), url("../images/about_us/sec2-bg.jpg");
         background-repeat: no-repeat, no-repeat,no-repeat;
-        background-position: center;
-        background-size: cover;
+        background-position: top 30px left 30px, bottom 30px right 30px, center;
+        background-size: 200px 75px,300px 45px, cover;
             }
         
     @media screen and (min-width:$breakpoint-desk) {
         max-width: 1600px;
-        height: 500px;
-        padding-top: auto;
-        padding-bottom: auto;
+       // height: 500px;
+        padding-top: 118px;
+        padding-bottom: 118px;
         background-image: url("../images/about_us/LLC.png"),url("../images/about_us/SAPIENTIS.png"), url("../images/about_us/sec2-bg.jpg");
         background-repeat: no-repeat, no-repeat,no-repeat;
         background-position: top 50px left 50px, bottom 50px right 20px, center;
         background-size: 400px 150px,600px 90px, cover;
     }
     }
-.long-height-section{
-    height: 700px;
-}
-    .about-us-box{
-        width: 900px;
-        margin: 0 auto;
-    }
-    .about-us__title{
-        margin-bottom: 30px;
-        text-transform: uppercase;
-        text-align: center;
-    @include font(800, 40, 60, none);
-    }
-    .about-us__text{
-        @include font(400, 18, 27, none);
-        text-indent: 30px;
-        text-align: justify;
-    }
 
-    .about-us__btn {
-        display: block;
-        border: none;
-        padding: 0;
-        cursor: pointer;
-        margin: 20px auto auto;
-        background: transparent;
-        // @media screen and (min-width: $breakpoint-desk) {
-        //   display: none;
-        // }
+.about-us-box{
+    @media screen and (min-width:$breakpoint-desk){
+    width: 900px;
+    margin: 0 auto;
     }
-    .about-us__text--hide{
-        display: none;
-    }
-    
-      
-      .about-us__btn-text {
-        @include font(400, 18, 27, none);
-        color: var(--headerMenu-text-color);
-      }
+}
+
+.about-us__title{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+@include font(800, 40, 60, none);
+}
+
+.about-us__text{
+    @include font(400, 18, 27, none);
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.about-us__btn {
+    display: block;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 20px auto auto;
+    background: transparent;
+    // @media screen and (min-width: $breakpoint-desk) {
+    //   display: none;
+    // }
+}
+
+.about-us__text--hide{
+    display: none;
+}
+
+.about-us__btn-text {
+    @include font(400, 18, 27, none);
+    color: var(--headerMenu-text-color);
+}
