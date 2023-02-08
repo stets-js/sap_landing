@@ -29,6 +29,8 @@
 }
 .footer-contacts__item{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 10px;
@@ -41,23 +43,27 @@
 
 .footer-contacts__link--letter{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 10px;
     color: var(--footer-contacts-color);
-    @include font(400, 18, 27, none);
+    @include font(400, 25, 38, none);
     text-transform: uppercase;
 }
 .footer-contacts__link--phone{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 10px;
     color: var(--footer-contacts-color);
-    @include font(400, 18, 27, none);
+    @include font(400, 25, 38, none);
 }
 
 .footer-contacts__text-time{
     color: var(--footer-contacts-color);
-    @include font(400, 18, 27, none); 
+    @include font(400, 25, 38, none); 
 }
