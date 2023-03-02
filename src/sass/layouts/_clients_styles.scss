@@ -1,0 +1,70 @@
+.clients {
+    max-width: 480px;
+    height: 400px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    background-image: url("../images/clients/clients-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width:$breakpoint-tab){
+        max-width: 768px;
+        // background-size: 768px 400px;
+        background-image: url("../images/clients/clients-bg.jpg");
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+            }
+        
+    @media screen and (min-width:$breakpoint-desk) {
+        max-width: 1600px;
+        height: 500px;
+        padding-top: auto;
+        padding-bottom: auto;
+        background-image: url("../images/clients/clients-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    }
+
+    .clients__title {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        text-align: center;
+    @include font(800, 40, 60, none);
+    }
+
+    .swiper{
+       width: 90%; 
+      height: 50%;
+    //   @media screen and (min-width:$breakpoint-tab){
+    //     width: 90%; 
+    //     height: 50%;
+    //   }
+    //   @media screen and (min-width:$breakpoint-desk){
+    //     width: 90%; 
+    //     height: 50%;
+    //   }
+    }
+
+.swiper-wrapper{
+    align-items: center;
+}
+
+.swiper-item{
+    display: flex;
+    justify-content: center;
+}
+.swiper-item-img{
+    width: 70%;
+    object-fit: contain;
+    @media screen and (min-width:$breakpoint-tab){
+        width: 50%;
+    }
+      @media screen and (min-width:$breakpoint-desk){
+        width: 40%;
+      }
+}

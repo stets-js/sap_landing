@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAPIENTIS</title>
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
   </head>
   <body>
@@ -14,11 +19,45 @@
     <include src="./partials/hero.html"></include>
     <include src="./partials/about_us.html"></include>
     <include src="./partials/services.html"></include>
-    <include src="./partials/consultation.html"></include>
+    <include src="./partials/clients.html"></include>
     <include src="./partials/benefits.html"></include>
     <include src="./partials/footer.html"></include>
     </main>
     <script type="module" src="./js/pop-up-text.js"></script>
     <script type="module" src="./js/mobile-menu.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+ loop: true,
+ centeredSlidesBounds: true,
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+  480: {
+    
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    768: {
+      
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    1280: {
+      
+      spaceBetween: 40
+    }
+  }
+});
+    </script>
   </body>
 </html>
