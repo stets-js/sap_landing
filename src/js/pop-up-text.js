@@ -10,7 +10,6 @@ $('[data-btn-more]').on('click', function () {
   $(this).siblings('[data-text]').toggle('slow');
   $(this).find('[data-text-more]').addClass('is-hidden');
     $(this).find('[data-btn-more]').addClass('is-hidden');
-  //$("section.about-us").toggleClass('long-height-section');
 });
 
 $('[data-btn-less]').on('click', function () {
@@ -24,5 +23,4 @@ $('[data-btn-less]').on('click', function () {
   $(this).siblings('[data-text]').toggle('slow');
   $(this).find('[data-text-less]').addClass('is-hidden');
   $(this).find('[data-btn-less]').addClass('is-hidden');
-  //$("section.about-us").toggleClass('long-height-section');
 });

@@ -11,7 +11,6 @@
 
     @media screen and (min-width:$breakpoint-tab){
         max-width: 768px;
-        // background-size: 768px 400px;
         background-image: url("../images/clients/clients-bg.jpg");
         background-repeat: no-repeat;
     background-position: center;
@@ -40,15 +39,7 @@
     .swiper{
        width: 90%; 
       height: 50%;
-    //   @media screen and (min-width:$breakpoint-tab){
-    //     width: 90%; 
-    //     height: 50%;
-    //   }
-    //   @media screen and (min-width:$breakpoint-desk){
-    //     width: 90%; 
-    //     height: 50%;
-    //   }
-    }
+        }
 
     .swiper-button-next,
     .swiper-button-prev{
@@ -71,5 +62,5 @@
     }
       @media screen and (min-width:$breakpoint-desk){
         width: 40%;
-      }
+    }
 }
