@@ -14,6 +14,8 @@
 
     @media screen and (min-width:$breakpoint-tab){
         max-width: 768px;
+        padding-top: 120px;
+    padding-bottom: 120px;
         // background-size: 768px 400px;
         background-image: url("../images/hero/hero-tab-768x248.jpg");
             }
@@ -21,16 +23,17 @@
     @media screen and (min-width:$breakpoint-desk) {
         max-width: 1600px;
         height: 600px;
-        padding-top: 118px;
-    padding-bottom: 118px;
+        padding-top: 170px;
+    padding-bottom: 170px;
         background-image: url("../images/hero/hero-dc-1536x496.jpg")}
     }
 
 .hero-box{
     @media screen and (min-width:$breakpoint-desk) {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 960px;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin: auto;
     }
 }
 
