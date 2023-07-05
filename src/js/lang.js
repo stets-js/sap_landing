@@ -32,10 +32,10 @@ function changeLanguages(){
             'en': 'about us',
         },
         'lng-about-us__text1':{
-            'en': 'Our team of professionals, sharing the same values, was created with the purpose of providing legal support to businesses and manufacturers in the pharmaceutical industry. Our fundamental principles include consumer orientation, individual approach, creation of benefits and long-term relationships. Having many years of experience, we will develop the best strategy to meet your needs.',
+            'en': 'Our team of professionals, sharing the same values, was created to provide legal support to businesses and manufacturers in the pharmaceutical industry. Our fundamental principles include consumer orientation, individual approach, creation of benefits and long-term relationships. Having many years of experience, we will develop the best strategy to meet your needs.',
         },
         'lng-about-us__text2':{
-        "en": "Considerable experience of our team in such areas as registration/reregistration/amendment of registration dossiers of the pharmaceutical products, certification of medical devices, legalization of dietary supplements, baby food, registration of imported beauty products, certification of pharmaceutical products manufacturing, trademark registration, patenting of inventions, etc. ensures that we will be able to make your work significantly easier, save your time, money and take on a considerable amount of your urgent work with a guarantee of a successful result"
+        "en": "Considerable experience of our team in such areas as registration, re-registration, amendment of registration dossiers of the pharmaceutical products, certification of medical devices, legalization of dietary supplements, baby food, registration of imported beauty products, certification of pharmaceutical products manufacturing, trademark registration, patenting of inventions, etc. ensures that we will be able to make your work significantly easier, save your time, money and take on a considerable amount of your urgent work with a guarantee of a successful result"
         },
         'lng-more':{
         "en":"Show more"        },
@@ -51,25 +51,25 @@ function changeLanguages(){
         "en":"Registration / re-registration / variations of the registration dossier"
         },
         'lng-servises1-card1--back':{
-        "en":"Мanufacturing authorization (Registration certificate) for a registered / re-registered pharmaceutical products; changes to the registration dossier."
+        "en":"Мanufacturing authorization (Registration certificate) for registered / re-registered pharmaceutical products; changes to the registration dossier"
         },
         'lng-servises1-card2':{
         "en":"Legalization of imported beauty products"
         },
         'lng-servises1-card2--back':{
-        "en":"Conclusion and Appendix to the Conclusion of the State Sanitary and Epidemiological Examination. Report on research work. Approved text for product labeling"
+        "en":"Conclusion and Appendix to the Conclusion of the State Sanitary and Epidemiological Examination. Report on research work. Approved text for product labelling"
         },
         'lng-servises1-card3':{
         "en":"Legalization of dietary supplements, baby food"
         },
         'lng-servises1-card3--back':{
-        "en":"Conclusion and Appendix to the Conclusion of the State Sanitary and Epidemiological Examination. Report on research work. Approved text for product labeling."
+        "en":"Conclusion and Appendix to the Conclusion of the State Sanitary and Epidemiological Examination. Report on research work. Approved text for product labelling"
         },
         'lng-servises1-card4':{
         "en":"Certification of medical devices"
         },
         'lng-servises1-card4--back':{
-        "en":"Declaration of Conformity with Annex / Certificate of Conformity / Entry of Information into the Register of Persons Responsible for Putting Medical Devices into Service."
+        "en":"Declaration of Conformity with Annex / Certificate of Conformity / Entry of Information into the Register of Persons Responsible for Putting Medical Devices into Service"
         },
         'lng-servises2':{
         "en":"MARKET SURVEILLANCE"
@@ -84,7 +84,7 @@ function changeLanguages(){
             "en":"Development and approval of the quality certificate template for the manufacturer"
             },
             'lng-servises2-card2--back':{
-            "en":"Certificate of quality analysis of a pharmaceutical product in accordance with the requirements of the legislation of Ukraine"
+            "en":"Certificate of quality analysis of a pharmaceutical product by the legislation of Ukraine"
             },
             'lng-servises2-card3':{
             "en":"Implementation of packaging in the process of manufacture"
@@ -111,7 +111,7 @@ function changeLanguages(){
                     "en":"Certification of pharmaceutical products manufacturing for compliance with the requirements of good manufacturing practice (GMP)"
                     },
                     'lng-servises3-card2--back':{
-                    "en":"Updated list of medicines registered or scheduled for registration in Ukraine (Supplement to GMP Opinion)"
+                    "en":"The updated list of medicines registered or scheduled for registration in Ukraine (Supplement to GMP Opinion)"
                     },
                     'lng-servises3-card3':{
                     "en":"Certification of pharmaceutical products manufacturing for compliance with the requirements of good manufacturing practice (GMP)"
@@ -120,10 +120,10 @@ function changeLanguages(){
                     "en":"GMP Compliance Statement with a List of Medicines Registered or Scheduled for Registration in Ukraine (GMP)"
                     },
                     'lng-servises3-card4':{
-                    "en":"Recognition of EC Certificate of Conformity on compliance of the manufacturing conditions of the pharmaceutical products with the requirements of good manufacturing practice (GMP)"
+                    "en":"Recognition of EU Certificate of Conformity on compliance of the manufacturing conditions of the pharmaceutical products (GMP)"
                     },
                     'lng-servises3-card4--back':{
-                    "en":"Recognition of EC Certificate of Conformity on compliance"
+                    "en":"Recognition of EU Certificate of Conformity on compliance"
                     },
             'lng-servises4':{
                 "en":"other services"
